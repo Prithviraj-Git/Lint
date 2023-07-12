@@ -26,3 +26,5 @@ jobs:
 
       - name: Run Eslint
         uses: tj-actions/eslint-changed-files@v18
+        with:
+          skip_annotations: "true"
