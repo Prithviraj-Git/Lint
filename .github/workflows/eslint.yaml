@@ -32,5 +32,8 @@ jobs:
         if: steps.cache-primes.outputs.cache-hit != 'true'
         run: npm install
 
-      - name: Run Eslint
-        run: npm run lint
+      - name: Run ESLint
+        uses: sibiraj-s/action-eslint@v3
+        with:
+          extensions: 'js,jsx'
+          annotations: true
